@@ -16,7 +16,7 @@ The RTL was rigorously verified using a self-checking SystemVerilog testbench ex
 * **SystemVerilog Assertions (SVA):** Concurrent SVAs actively monitor the bus and flag catastrophic failure modes, specifically verifying zero `overflow` (writing while full) and `underflow` (reading while empty) conditions.
 
 <!-- PLACEHOLDER: Insert your Vivado Simulation Waveform / Console output here -->
-![Simulation Waveform](images/tcl.png)
+![Simulation Waveform](images/waveform.png)
 *Figure 2: Vivado simulation demonstrating FWFT read logic and clean clock domain crossing.*
 
 ---
@@ -29,10 +29,10 @@ The physical implementation was executed using the **LibreLane / OpenROAD** open
 
 <!-- PLACEHOLDERS: Insert your KLayout/OpenROAD GUI stage exports here -->
 
-| Floorplan & PDN | Placement | Clock Tree Synthesis (CTS) | Detailed Routing (GDS) |
-| :---: | :---: | :---: | :---: |
+| Placement | Detailed Routing | Final GDSII Layout |
+| :---: | :---: | :---: |
 | ![Placement](images/placement-layout.png) | ![Routing](images/route-layout.png) | ![GDSII](images/gds.png) |
-| *Die area, I/O pins, and Power Delivery Network (PDN) stripes.* | *Standard cells packed into core rows without routing.* | *Balanced clock buffer insertion for the independent domains.* | *Final metal interconnects and vias.* |
+| *Standard cells packed into core rows prior to signal routing.* | *Multi-layer metal interconnects and vias routed across the core.* | *Signoff-ready GDSII layout with filler cells and power rails.* |
 
 ---
 
