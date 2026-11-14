@@ -29,11 +29,10 @@ The physical implementation was executed using the **LibreLane / OpenROAD** open
 
 <!-- PLACEHOLDERS: Insert your KLayout/OpenROAD GUI stage exports here -->
 
-| Placement | Detailed Routing | Final GDSII Layout |
+| Placement | Clock Tree Synthesis | Detailed Routing | Final GDSII Layout |
 | :---: | :---: | :---: | :---: |
-| ![Placement](images/placement-layout.png)  | ![Clock Tree Synthesis](images/cts.png) | | ![Routing](images/routing-layout.png) | ![GDSII](images/gds.png) |
-| *Standard cells packed into core rows prior to signal routing.* | *Multi-layer metal interconnects and vias routed across the core.* | *Signoff-ready GDSII layout with filler cells and power rails.* |
-
+| ![Placement](images/placement-layout.png) | ![Clock Tree Synthesis](images/cts.png) | ![Routing](images/routing-layout.png) | ![GDSII](images/gds.png) |
+| *Standard cells packed into core rows prior to signal routing.* | *Clock network routed to synchronize sequential elements.* | *Multi-layer metal interconnects and vias routed across the core.* | *Signoff-ready GDSII layout with filler cells and power rails.* |
 ---
 
 ## 3. Implementation Metrics (Sky130)
