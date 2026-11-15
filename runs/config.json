@@ -6,4 +6,6 @@
   "FP_CORE_UTIL": 50,
   "PDK": "sky130A",
   "STD_CELL_LIBRARY": "sky130_fd_sc_hd"
+  "PNR_SDC_FILE": "dir::src/fifo.sdc",
+  "SIGNOFF_SDC_FILE": "dir::src/fifo.sdc"
 }
